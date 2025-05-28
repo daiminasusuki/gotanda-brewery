@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+body{
+  font-family: 'Helvetice Neue',sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  color: #a6865f;
+  font-size: 32px;
+  font-family: "inter",sans-serif;
+}
+
+h2{
+  color: #a6865f;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+.mv{
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.container {
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto;
+  gap: 0 calc((96 / 1120) * 100%);
+
+  @media (max-width :767px) {
+    flex-direction: column;
+  }
+}
+
+.mv {
+  margin-inline: calc(50% - 50vw);
+  img {
+    width: 100%;
+  }
+}
+
+
+
+.fig {
+  width: calc((544 / 1120) * 100%);
+
+  @media (max-width: 767px) {
+    width: auto;
+    margin-block-start: 32px;
+  }
+}
+
+.fig img {
+  width: 100%;
+}
+
+.text {
+  width: calc((480 / 1120) * 100%);
+
+  @media (max-width: 767px) {
+    width: auto;
+    margin-block-start: 32px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+
+  @media(max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+
+p {
+  font-size: 24px;
+
+  @media(max-width: 767px) {
+    font-size: 13px;
+  }
+}
+
+.container.reverse {
+  flex-direction: row-reverse;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.button {
+  height: 92px;
+  background-color: #18ea8f(13, 180, 27);
+  border-radius: 10px;
+  margin-block-start: 64px;
+}
+
+
+em {
+  background-color: darkkhaki;
+}
+
+li{
+  flex-basis: 100%;
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-visual img{
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.wall-side-img{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.fig-about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.button{
+  border-radius: 10px;
+  max-width: 244px;
+  height: 64px;
+  margin: 0 auto;
+  background: linear-gradient(#c49f72 0%,#a6865f 100%);
+}
